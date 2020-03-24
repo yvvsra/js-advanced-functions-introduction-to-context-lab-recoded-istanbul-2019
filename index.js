@@ -13,7 +13,7 @@ return {
 
 function createEmployeeRecords(array)
 {
-    return array.map(ele=>createEmployeeRecord(record))
+    return array.map(ele=>createEmployeeRecord(ele))
 }
 
    //  let updatedBpRecord = createTimeInEvent(bpRecord, "2014-02-28 1400")
