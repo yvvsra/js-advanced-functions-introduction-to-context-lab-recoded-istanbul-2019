@@ -44,9 +44,11 @@ return (outEvent.hour- inEvent.hour)/100;
  }
 
    
+function wagesEarnedOnDate(record, dateStamp){
+  return hoursWorkedOnDate(record,dateStamp) * record.payPerHour;
+}   
+   
 
-   
-   
    
   
 
