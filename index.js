@@ -54,8 +54,7 @@ return time.reduce((total,date)=> total + wagesEarnedOnDate(employee, date), 0)
 }
    
 function calculatePayroll(employee){
-
-  
+  return employee.reduce((total,element)=>total + allWagesFor(element), 0)
 }
 
 
