@@ -40,7 +40,7 @@ function createEmployeeRecords(array)
   function hoursWorkedOnDate(record, dateStamp){
 let inEvent = record.timeInEvents.find(element=> element.date === dateStamp)
 let outEvent = record.timeOutEvents.find(element=> element.date ===dateStamp)
-return (outEvent- inEvent)/100;
+return (outEvent.hour- inEvent.hour)/100;
  }
 
    
