@@ -29,7 +29,7 @@ function createEmployeeRecords(array)
    return record;
  }
    
-   function createTimeOutEvent(record, date) {
+   function createTimeOutEvent(record, dateStamp) {
  let [date,hour] = dateStamp.split(' ');
    record.timeOutEvents.push({ 
    type: "TimeOut",
