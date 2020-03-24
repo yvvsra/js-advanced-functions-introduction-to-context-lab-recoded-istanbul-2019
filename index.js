@@ -36,6 +36,13 @@ function createEmployeeRecords(array)
    hour: parseInt(hour,10),date })
    return record;
  }
+ 
+  function hoursWorkedOnDate(record, dateStamp){
+let inEvent = record.timeInEvents.find(element=> element.dateStamp)
+let outEvent = record.timeOutEvents.find(element=> element.dateStamp)
+return (outEvent- inEvent)/100;
+ }
+
    
 
    
