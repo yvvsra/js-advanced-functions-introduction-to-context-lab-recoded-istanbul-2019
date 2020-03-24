@@ -11,8 +11,10 @@ return {
 }
 }
 
-function createEmployeeRecords(array){
-  return array.map(function(record){
-    return createEmployeeRecord(record)  
+function createEmployeeRecords(array)
+{
+    return array.map(function(record){
+      return createEmployeeRecord(record)  
   })
 }
+
