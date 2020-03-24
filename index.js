@@ -25,7 +25,7 @@ function createEmployeeRecords(array)
  let [date,hour] = dateStamp.split(' ');
    record.timeInEvents.push({ 
    type: "TimeIn",
-   hour: parseInt(hour,10) })
+   hour: parseInt(hour,10), date })
    return record;
  }
    
@@ -33,7 +33,7 @@ function createEmployeeRecords(array)
  let [date,hour] = dateStamp.split(' ');
    record.timeOutEvents.push({ 
    type: "TimeOut",
-   hour: parseInt(hour,10),date })
+   hour: parseInt(hour,10),date:date })
    return record;
  }
    
