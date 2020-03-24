@@ -18,3 +18,29 @@ function createEmployeeRecords(array)
   })
 }
 
+   //  let updatedBpRecord = createTimeInEvent(bpRecord, "2014-02-28 1400")
+//  let newEvent = updatedBpRecord.timeInEvents[0]
+
+ function createTimeInEvent(record, dateStamp){
+ let [date,hour] = dateStamp.split(' ');
+   record.timeInEvents.push({ 
+   type: "TimeIn",
+   hour: parseInt(hour,10) })
+   return record;
+ }
+   
+   function createTimeOutEvent(record, date) {
+ let [date,hour] = dateStamp.split(' ');
+   record.timeOutEvents.push({ 
+   type: "TimeOut",
+   hour: parseInt(hour,10),date })
+   return record;
+ }
+   
+
+   
+   
+   
+  
+
+
