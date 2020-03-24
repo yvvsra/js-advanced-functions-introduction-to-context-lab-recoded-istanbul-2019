@@ -49,11 +49,13 @@ function wagesEarnedOnDate(record, dateStamp){
 }   
    
 function allWagesFor(employee){
-let time = employee.timeInEvents.map(event=> event.date)
+let time = employee.timeInEvents.map(event => event.date)
 return time.reduce((total,date)=> total + wagesEarnedOnDate(employee, date), 0)
-  
 }
    
+function calculatePayroll(employee){
+
   
+}
 
 
